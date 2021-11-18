@@ -30,3 +30,10 @@ A Python package to generate metadata badges from Poetry's `pyproject.toml` file
 - [Bandit](https://bandit.readthedocs.io/)
 
 This CLI was created with [Cookiecutter](https://github.com/audreyr/cookiecutter) and the [`joaopalmeiro/cookiecutter-templates/python-cli`](https://github.com/joaopalmeiro/cookiecutter-templates) project template.
+
+## Notes
+
+- [Easy Way to Create CLI Scripts with JavaScript and Node](https://youtu.be/dfTpFFZwazI) by James Q Quick.
+- [create-node-cli](https://github.com/ahmadawais/create-node-cli): CRA-like CLI to create Node.js CLI applications.
+- [node-cli-boilerplate](https://github.com/sindresorhus/node-cli-boilerplate).
+- [`bin`](https://docs.npmjs.com/cli/v8/configuring-npm/package-json#bin) (`package.json` file): command to use the CLI (similar to the `[tool.poetry.scripts]` section of the `pyproject.toml` file).
