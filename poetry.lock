@@ -290,6 +290,14 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "scalpl"
+version = "0.4.2"
+description = "A lightweight wrapper to operate on nested dictionaries seamlessly."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
 name = "smmap"
 version = "5.0.0"
 description = "A pure Python implementation of a sliding window memory map manager"
@@ -348,7 +356,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.6"
-content-hash = "4f33d78103add8cb377e4325a598f04d199087827968a3211cb9ff43d03bc27c"
+content-hash = "2095d09732759fd3b5d7028f7631b588f8b4eafae859f3518430b11b9fdc832a"
 
 [metadata.files]
 appdirs = [
@@ -551,6 +559,10 @@ regex = [
     {file = "regex-2021.11.10-cp39-cp39-win32.whl", hash = "sha256:3b5df18db1fccd66de15aa59c41e4f853b5df7550723d26aa6cb7f40e5d9da5a"},
     {file = "regex-2021.11.10-cp39-cp39-win_amd64.whl", hash = "sha256:83ee89483672b11f8952b158640d0c0ff02dc43d9cb1b70c1564b49abe92ce29"},
     {file = "regex-2021.11.10.tar.gz", hash = "sha256:f341ee2df0999bfdf7a95e448075effe0db212a59387de1a70690e4acb03d4c6"},
+]
+scalpl = [
+    {file = "scalpl-0.4.2-py3-none-any.whl", hash = "sha256:3a7a963b9b3639108722008cc2b5a42ae576b48c74fcd0f17baf7b1c9792ab7b"},
+    {file = "scalpl-0.4.2.tar.gz", hash = "sha256:8773a1c91e051a4baa255acf1804fe331fae6a36501c99519415511456b8a745"},
 ]
 smmap = [
     {file = "smmap-5.0.0-py3-none-any.whl", hash = "sha256:2aba19d6a040e78d8b09de5c57e96207b09ed71d8e55ce0959eeee6c8e190d94"},

@@ -37,3 +37,5 @@ This CLI was created with [Cookiecutter](https://github.com/audreyr/cookiecutter
 - [create-node-cli](https://github.com/ahmadawais/create-node-cli): CRA-like CLI to create Node.js CLI applications.
 - [node-cli-boilerplate](https://github.com/sindresorhus/node-cli-boilerplate).
 - [`bin`](https://docs.npmjs.com/cli/v8/configuring-npm/package-json#bin) (`package.json` file): command to use the CLI (similar to the `[tool.poetry.scripts]` section of the `pyproject.toml` file).
+- [Click 7 documentation](https://click.palletsprojects.com/en/7.x/).
+- [Scalpl](https://github.com/ducdetronquito/scalpl) package: to handle nested dictionaries using dot-separated string keys. `poetry add scalpl`.
