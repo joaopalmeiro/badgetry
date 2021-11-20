@@ -18,5 +18,8 @@
     "editor.rulers": [88]
   },
 
-  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python"
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+
+  "workbench.colorTheme": "Rosé Pine",
+  "workbench.iconTheme": "rose-pine-icons"
 }
