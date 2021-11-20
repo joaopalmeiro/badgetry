@@ -2,8 +2,8 @@ import click
 from scalpl import Cut
 
 from . import __version__
-from .constants import DEPENDENCIES_KEY, DEV_DEPENDENCIES_KEY
-from .utils import load_toml
+from .constants import DEPENDENCIES_KEY, DEV_DEPENDENCIES_KEY, PREDEFINED_BADGES
+from .utils import list2str, load_toml
 
 
 # More info:
@@ -30,6 +30,14 @@ def main(input_path):
 
     deps = proxy[DEPENDENCIES_KEY]
     dev_deps = proxy[DEV_DEPENDENCIES_KEY]
+    all_deps = {**deps, **dev_deps}
+    # click.echo(all_deps)
 
-    all_deps = {**deps, **dev_deps}.keys()
-    click.echo(all_deps)
+    badges = [PREDEFINED_BADGES[d] for d in PREDEFINED_BADGES if d in all_deps]
+    # pretty_print(badges)
+
+    if badges:
+        output = list2str(badges)
+        click.echo(output)
+    else:
+        click.secho("No badges", fg="red")
