@@ -9,6 +9,7 @@ from .utils import load_toml
 # More info:
 # - https://click.palletsprojects.com/en/7.x/arguments/#file-path-arguments
 # - https://click.palletsprojects.com/en/7.x/api/#click.Path
+# - https://click.palletsprojects.com/en/8.0.x/documentation/#documenting-arguments
 @click.command()
 @click.argument(
     "input_path",
@@ -17,7 +18,10 @@ from .utils import load_toml
 )
 @click.version_option(version=__version__)
 def main(input_path):
-    """A Python package to generate metadata badges from Poetry's pyproject.toml files."""
+    """A Python package to generate metadata badges from Poetry's pyproject.toml files.
+
+    INPUT_PATH matches the pyproject.toml file in the current folder by default.
+    """
     metadata = load_toml(input_path)
     # pretty_print(metadata)
 
