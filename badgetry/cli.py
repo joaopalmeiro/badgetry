@@ -2,7 +2,7 @@ import click
 from scalpl import Cut
 
 from . import __version__
-from .constants import DEPENDENCIES_KEY
+from .constants import DEPENDENCIES_KEY, DEV_DEPENDENCIES_KEY
 from .utils import load_toml
 
 
@@ -28,5 +28,8 @@ def main(input_path):
     proxy = Cut(metadata)
     # pretty_print(proxy.data)
 
-    deps = proxy[DEPENDENCIES_KEY].keys()
-    click.echo(deps)
+    deps = proxy[DEPENDENCIES_KEY]
+    dev_deps = proxy[DEV_DEPENDENCIES_KEY]
+
+    all_deps = {**deps, **dev_deps}.keys()
+    click.echo(all_deps)
