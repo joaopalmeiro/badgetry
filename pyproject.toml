@@ -7,7 +7,7 @@ license = "MIT"
 readme = "README.md"
 homepage = "https://github.com/joaopalmeiro/badgetry"
 repository = "https://github.com/joaopalmeiro/badgetry"
-keywords = ["badgetry", "cli", "metadata", "badge"]
+keywords = ["badgetry", "cli", "metadata", "badge", "readme"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Environment :: Console",

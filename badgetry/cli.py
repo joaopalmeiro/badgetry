@@ -42,7 +42,9 @@ def main(input_path):
 
         pyperclip.copy(output)
 
-        click.secho("Copied to clipboard!", bold=True)
+        click.secho("Copied to clipboard!\n", bold=True)
         click.echo(output)
     else:
-        click.secho("No badges to generate.", fg="red", err=True)
+        click.secho(
+            "No badges to generate from your pyproject.toml file.", fg="red", err=True
+        )
