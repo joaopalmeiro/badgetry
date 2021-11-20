@@ -1,4 +1,5 @@
 import click
+import pyperclip
 from scalpl import Cut
 
 from . import __version__
@@ -38,6 +39,10 @@ def main(input_path):
 
     if badges:
         output = list2str(badges)
+
+        pyperclip.copy(output)
+
+        click.secho("Copied to clipboard!", bold=True)
         click.echo(output)
     else:
-        click.secho("No badges", fg="red")
+        click.secho("No badges to generate.", fg="red", err=True)
